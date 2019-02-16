@@ -126,15 +126,10 @@ parallelizable execution graphs), then add this to your maven configuration:
 
 #### Java Gradle
 ```groovy
-// Add plugin https://plugins.gradle.org/plugin/net.ltgt.apt
-plugins {
-  id "net.ltgt.apt" version "0.10"
-}
-
 // Add Dagger dependencies
 dependencies {
-  compile 'com.google.dagger:dagger:2.x'
-  apt 'com.google.dagger:dagger-compiler:2.x'
+  implementation 'com.google.dagger:dagger:2.x'
+  annotationProcessor 'com.google.dagger:dagger-compiler:2.x'
 }
 ```
 
